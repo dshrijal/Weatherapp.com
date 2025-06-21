@@ -1,1 +1,48 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather_web_App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Check The Weather</h1>
+
+
+
+        <div class="search">
+
+            <input type="text" id="city-input" placeholder="Enter the city name" value="Nepalgunj">
+
+            <button onclick="getWeather()">Search</button>
+
+        </div>
+        <div class="weather-info" id="weather-info" style="display: none;">
+
+            <h2 id="city-name"></h2>
+
+            <img id="weather-icon" src="" alt="weather icon">
+            <p id="temperature"></p>
+
+            <p id="description"></p>
+
+            <p id="humidity"></p>
+
+            <p id="wind"></p>
+
+            <p id="pressure"></p>
+        </div>
+
+        <p id="error" style="display: none; color: red;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
